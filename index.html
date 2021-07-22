@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HighRadius</title>
+</head>
+<body>
+    <nav class="navigationbar">
+        <img class="logo_abc" src="Group 20399.svg" alt="Logo of Company">
+        <img class="logo" src="logo.svg" alt="Logo of HighRadius">
+    </nav>
+    <h3>Invoice List</h3>
+    <div class="Main_body">
+        <div class="upperline">
+            <button class="btn1" id="myBtn">+ Add</button>
+                <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">&times;</span>
+                            <h3>Add Invoice</h3>
+                        </div>
+                    <hr>
+                    <div class="grid-container">
+                    
+                        <div class="grid-item">
+                            <form class="addbtn" action="index.html" method="POST">
+                                <div class="label">
+                                    <label>Customer Name <span class="red">*</span> </label>
+                                    <input type="text" id="custname" name="" value="" style="background-color:  #2A3E4C;">
+                                </div>
+                                <div class="label">
+                                    <label>Customer No. <span class="red">*</span>  </label>
+                                    <input type="text" id="custno" name="" value="" style="background-color:  #2A3E4C;">
+                                </div>
+                                
+                                <div class="label">
+                                    <label>Invoice No. <span class="red">*</span>  </label>
+                                    <input type="number" id="invoiceno" name="" value="" style="background-color:  #2A3E4C;">
+                                </div>
+                                
+                                <div class="label">
+                                    <label>Invoice Amount <span class="red">*</span>  </label>
+                                    <input type="number" id="invoiceamount" name="" value="" style="background-color:  #2A3E4C;">
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="label">
+                                    <label>Due Date <span class="red">*</span> </label>
+                                    <input type="date" id='duedate' name="" value="" style="background-color:  #2A3E4C;">
+                                </div>
+                                
+                                <div class="label">
+                                    <label style="float: left;">Notes</label>
+                                    <textarea name="" id="" cols="20" rows="6" style="background-color:  #2A3E4C;"></textarea>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="modal-footer">
+                            <input type="reset" class="ca" value=Clear>
+                            <button class="ca1" id='addbutton'>Add</button>
+                        </div>
+                    </div>
+                </div>
+            <button class="btn2" id="myBtn1">✎ Edit</button>
+                <!-- The Modal -->
+                <div id="myModal1" class="modal1">
+
+                    <!-- Modal content -->
+                    <div class="modal-content1">
+                        <div class="modal-header">
+                            <span class="close1">&times;</span>
+                            <h3>Edit Invoice</h3>
+                        </div>
+                        <hr>
+                        <div class="modal-body1">
+                            <form action="index.html" method="POST">
+                                <div  class="label">
+                                    <label>Invoice Amount</label>
+                                    <input type="number" name="" value="" style="background-color:  #2A3E4C;">
+                                </div>
+                                <div  class="label">
+                                    <label  style="float: left;">Notes</label>
+                                    <textarea name="" id="" cols="22" rows="6" style="background-color:  #2A3E4C;"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <hr>
+                        <div class="modal-footer1">
+                            <input type="reset" class="rs" value=Reset>
+                            <button class="rs1">Save</button>
+                        </div>
+                    </div>
+                
+                </div>
+            <button class="btn3" id="myBtn2">- Delete</button>
+                            <!-- The Modal -->
+                <div id="myModal2" class="modal2">
+
+                    <!-- Modal content -->
+                    <div class="modal-content2">
+                        <div class="modal-header2">
+                            <span class="close2">&times;</span>
+                            <h2>Delete record(s)?</h2>
+                        </div>
+                        <hr class="hr" style="width: 100%">
+                        <div class="modal-body2">
+                            <p>You'll lose your record after this action. We can't recover them once you delete.</p>
+                            <br>
+                            <p>Are you sure you want to <span class="red">permanently delete</span> them?</p>
+                        </div>
+                        <hr class="hr" style="width: 100%">
+                        <div class="modal-footer2">
+                            <button class="cd">Cancel</button>
+                            <button class="cd1">Delete</button>
+                        </div>
+                    </div>
+  
+                </div>
+            <input class="search_invoice" type = "text" placeholder = "Search by Invoice Number  🔍	" img src = "">
+        </div>
+    <br>
+    <table cellspacing="0" cellpadding="0">
+        <thead>
+            <tr>
+                <th><input style="opacity: 0.4;" type="checkbox"></th>
+                <th>Customer Name</th>
+                <th>Customer #</th>
+                <th>Invoice #</th>
+                <th>Invoice Amount</th>
+                <th>Due Date</th>
+                <th>Predicted Payment Date</th>
+                <th>Notes</th>
+            </tr>
+        </thead>
+        <tr class='dark', id='t_body'></tr>
+        <tbody id="tbody">
+            
+        </tbody>
+    </table>
+    </div>
+    <button class="previous_btn" onclick="Previousbtn()"> < </button>
+    <button class="next_btn" onclick="Nextbtn()"> > </button>
+    <script src="index.js"></script>
+</body>
+</html>

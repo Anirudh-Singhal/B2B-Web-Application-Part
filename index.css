@@ -1,0 +1,361 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #58687e;
+}
+.navigationbar{
+    height: 80px;
+    display: flex;
+    padding-left: 35px;
+}
+.logo_abc{
+    width: auto;
+    height: 50px;
+}
+.logo { 
+    width: auto;
+    height: 50px;
+    margin-left: 275px;
+  }
+.btn1, .btn2, .btn3{
+      border-radius: 5px;
+      background-color: #273D49CC;
+      color: #97A1A9;
+      height: 23px;
+  }
+  .btn1:hover, .btn2:hover, .btn3:hover{
+    color: #FFFFFF;
+  }
+  .imgbtn{
+      height: 13px;
+      color: white;
+  }
+  .search_invoice{
+      color: #97A1A9;
+      background-color: #283A46;
+      text-align: right;
+      width: 225px;
+      border-radius: 5px;
+  }
+  .upperline{
+      /* height: 3px; */
+      text-align: right;
+  }
+  
+.Main_body {
+    background-color: #273D49CC;
+    width: 90%;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    padding-top: 10px;
+    
+}
+.dark{
+    background: #283A46 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+td{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.checkbox{
+  opacity: 0.4;
+}
+
+td{
+    border-bottom: 2px solid #283A46;
+    border-collapse: collapse;
+    opacity: 1;
+}
+th{
+    border-bottom: 2px solid #283A46;
+    border-collapse: collapse;
+    color: #97A1A9;
+}
+h3{
+    color: white;
+    width: 90%;
+    margin-left: 30px;
+    margin-right: auto;
+}
+table{
+    text-align: right;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    /* max-height: 550px; */
+    width: 100%;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.6);; /* Black w/ opacity */
+  }
+  .modal-content {
+    background-color: #2A3E4C;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+  }
+  .modal-header{
+    color: #FFFFFF;
+    text-align: left;
+    margin-top: 0%;
+    margin-left: 0%;
+}
+.modal-body{
+  color: #97A1A9;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #2A3E4C;
+  padding: 10px;
+}
+.grid-item{
+  background-color: #2A3E4C;
+  border: 1px solid #2A3E4C;
+  color: #97A1A9;
+  padding: 20px;
+}
+.label{
+  padding: 10px;
+}
+label{
+  display: inline-block;
+  width: 150px;
+  text-align: left;
+}
+input{
+  color: #FFFFFF;
+}
+textarea{
+  color: #FFFFFF;
+}
+.ca1{
+    background-color:  #14AFF1;
+    border-radius: 10px;
+    height: 30px;
+    color: #FFFFFF;
+    border-color: #14AFF1;
+  }
+  .ca{
+    background-color: #2A3E4C;
+    border-radius: 10px;
+    height: 30px;
+    color: #FFFFFF;
+    border-color: #14AFF1;
+  }
+  .modal-footer{
+    text-align: right;
+  }
+  /* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+/* The Modal (background) */
+.modal1 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content1 {
+  background-color: #2A3E4C;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%; /* Could be more or less, depending on screen size */
+}
+.modal-header1{
+  color: #FFFFFF;
+  text-align: left;
+  margin-top: 0%;
+  margin-left: 0%;
+}
+
+.modal-body1{
+  color: #C0C6CA;
+  text-align: left;
+}
+.modal-footer1{
+  text-align: right;
+}
+.rs1{
+  background-color:  #14AFF1;
+  border-radius: 10px;
+  height: 30px;
+  color: #FFFFFF;
+  border-color: #14AFF1;
+}
+.rs{
+  border-radius: 10px;
+  background-color: #2A3E4C;
+  height: 30px;
+  color: #FFFFFF;
+  border-color: #14AFF1;
+}
+/* The Close Button */
+.close1 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+  /* The Modal (background) */
+  .modal2 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content2 {
+    background-color: #2A3E4C;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+  }
+  .modal-header2{
+      color: #FFFFFF;
+      text-align: left;
+      margin-top: 0%;
+  }
+  .modal-body2{
+      color: #C0C6CA;
+      text-align: left;
+  }
+  .hr{
+    color: #2A5368;
+  }
+  .cd{
+    border-radius: 10px;
+    background-color: #2A3E4C;
+    height: 30px;
+    color: #FFFFFF;
+    border-color: #14AFF1;
+  }
+  .cd1{
+    border-radius: 10px;
+    height: 30px;
+    background-color:  #14AFF1;
+    color: #FFFFFF;
+    border-color: #14AFF1;
+  }
+  .red{
+    color: tomato;
+  }
+  .close2 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close2:hover,
+  .close2:focus {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+  .previous_btn {
+    height: 50px;
+    line-height: 50px;  
+    width: 50px;  
+    font-size: 2em;
+    font-weight: bold;
+    border-radius: 50%;
+    background-color: #14AFF1;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    left: 5px;
+    top: 350px;
+  }
+
+  .next_btn {
+    height: 50px;
+    line-height: 50px;  
+    width: 50px;  
+    font-size: 2em;
+    font-weight: bold;
+    border-radius: 50%;
+    background-color: #14AFF1;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 350px;
+  }
+
+@media only screen and (max-width: 800px) {
+  .logo_abc{
+    width: auto;
+    height: 38px;
+  }
+  .logo { 
+    width: auto;
+    height: 38px;
+    margin-left: 100px;
+  }
+  .Main_body {
+    width: 90%;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 27px;
+  }
+}
